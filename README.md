@@ -19,6 +19,28 @@
 
 Welcome to the Healthcare Data Exploration and Visualization project! In this project, we delve into a comprehensive healthcare dataset using Excel, SQL and Tableau to uncover valuable insights. By exploring patient demographics, medical conditions, billing trends, and more, we aim to gain a deeper understanding of healthcare delivery and patient outcomes. Through interactive visualizations and analysis, we showcase the power of data exploration and visualization in driving informed decision-making in the healthcare domain.
 
+### About Data
+
+The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle.com/datasets/prasad22/healthcare-dataset) This dataset contains sales . The data contains 17 columns and 10000 rows:
+
+| Column                  | Description                             | Data Type      |
+| :---------------------- | :-------------------------------------- | :------------- |
+| Name              | Invoice of the sales made               | VARCHAR(50)    |
+| Age                 | Branch at which sales were made         | VARCHAR(5)     |
+| Gender                   | The location of the branch              | VARCHAR(10)    |
+| Blood Type           | The type of the customer                | VARCHAR(3)    |
+| Medical Condition            | Product line of the product solf        | VARCHAR(20)   |
+| Date of Admission            | The price of each product               | DATE |
+| Doctor                | The amount of the product sold          | VARCHAR(50)            |
+| Hospital                | The amount of tax on the purchase       | VARCHAR(50)    |
+| Insurance Provider                   | The total cost of the purchase          | VARCHAR(50)  |
+| Billing Amount                    | The date on which the purchase was made | DECIMAL(10, 2)         |
+| Room Number                  | The time at which the purchase was made | INT      |
+| Admission Type                | The total amount paid                   | VARCHAR(20) |
+| Discharge Date                   | Cost Of Goods sold                      | DATE |
+| Medication | Gross margin percentage                 | VARCHAR(20)   |
+| Test Results          | Gross Income                            | VARCHAR(20)  |
+
 ### Data Sources
 ---
 Healthcare Dataset: Obtained from Kaggle, this synthetic healthcare dataset is provided in CSV format. It offers a realistic simulation of healthcare data for analysis, covering patient demographics, medical conditions, and billing information.
