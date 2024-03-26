@@ -25,21 +25,21 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
 
 | Column                  | Description                             | Data Type      |
 | :---------------------- | :-------------------------------------- | :------------- |
-| Name              | Invoice of the sales made               | VARCHAR(50)    |
-| Age                 | Branch at which sales were made         | VARCHAR(5)     |
-| Gender                   | The location of the branch              | VARCHAR(10)    |
-| Blood Type           | The type of the customer                | VARCHAR(3)    |
-| Medical Condition            | Product line of the product solf        | VARCHAR(20)   |
-| Date of Admission            | The price of each product               | DATE |
-| Doctor                | The amount of the product sold          | VARCHAR(50)            |
-| Hospital                | The amount of tax on the purchase       | VARCHAR(50)    |
-| Insurance Provider                   | The total cost of the purchase          | VARCHAR(50)  |
-| Billing Amount                    | The date on which the purchase was made | DECIMAL(10, 2)         |
-| Room Number                  | The time at which the purchase was made | INT      |
-| Admission Type                | The total amount paid                   | VARCHAR(20) |
-| Discharge Date                   | Cost Of Goods sold                      | DATE |
-| Medication | Gross margin percentage                 | VARCHAR(20)   |
-| Test Results          | Gross Income                            | VARCHAR(20)  |
+| Name              | The  name of the patient associated with the healthcare record             | VARCHAR(50)    |
+| Age                 | The age of the patient at the time of admission, expressed in years        | VARCHAR(5)     |
+| Gender                   | The he gender of the patient, either "Male" or "Female"            | VARCHAR(10)    |
+| Blood Type           | The patient's blood type              | VARCHAR(3)    |
+| Medical Condition            | The primary medical condition or diagnosis associated with the patient        | VARCHAR(20)   |
+| Date of Admission            |    The date on which the patient was admitted to the healthcare facility            | DATE |
+| Doctor                | The name of the doctor responsible for the patient's care during their admission          | VARCHAR(50)            |
+| Hospital                |  The healthcare facility or hospital where the patient was admitted       | VARCHAR(50)    |
+| Insurance Provider                   | The patient's insurance provider          | VARCHAR(50)  |
+| Billing Amount                    | The amount of money billed for the patient's healthcare services during their admission | FLOAT(10, 2)         |
+| Room Number                  | The room number where the patient was accommodated during their admission | INT      |
+| Admission Type                | The type of admission, which can be "Emergency," "Elective," or "Urgent"                 | VARCHAR(20) |
+| Discharge Date                   | The date on which the patient was discharged from the healthcare facility                    | DATE |
+| Medication | The medication prescribed or administered to the patient during their admission                | VARCHAR(20)   |
+| Test Results          | The results of a medical test conducted during the patient's admission                         | VARCHAR(20)  |
 
 ### Data Sources
 ---
