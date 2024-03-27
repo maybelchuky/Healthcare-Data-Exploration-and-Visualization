@@ -31,7 +31,7 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
 | Column                  | Description                             | Data Type      |
 | :---------------------- | :-------------------------------------- | :------------- |
 | Name              | The  name of the patient associated with the healthcare record             | VARCHAR(50)    |
-| Age                 | The age of the patient at the time of admission, expressed in years        | VARCHAR(5)     |
+| Age                 | The age of the patient at the time of admission, expressed in years        | INT     |
 | Gender                   | The he gender of the patient, either "Male" or "Female"            | VARCHAR(10)    |
 | Blood Type           | The patient's blood type              | VARCHAR(3)    |
 | Medical Condition            | The primary medical condition or diagnosis associated with the patient        | VARCHAR(20)   |
@@ -59,21 +59,31 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
 1. **Data Cleaning and Preparation Using Excel:** In the data preparation phase, we performed the fo,lowing tasks:
 > 1. Identify missing values in the dataset using Excel's filtering
 > 2. Identify and remove duplicate rows or records from the dataset
-> 3. Format the billing amount column to display numeric data as currency
+> 3. Format the billing amount column to currency and round up the amounts to a whole number
 
-2. **Data Wrangling:** This is the first step where inspection of data is done to make sure **NULL** values and missing values are detected and data replacement methods are used to replace, missing or **NULL** values.
+2. **Data Wrangling:** This is the step where inspection of data is done to make sure **NULL** values and missing values are detected and data replacement methods are used to replace, missing or **NULL** values.
 
 > 1. Build a database
 > 2. Create table and insert the data.
 > 3. Select columns with null values in them. There are no null values in our database as in creating the tables, we set **NOT NULL** for each field, hence null values are filtered out.
 
-3. **Feature Engineering:** This will help use generate some new columns from existing ones.
+3. **Segementation Analysis of Age Demographic:**: This will hwlp segement the age demographic into groups
+   > 1. Age BETWEEN 0 AND 12 = Child
+   > 2. Age BETWEEN 13 AND 19 = Teen
+   > 3. Age BETWEEN 20 AND 39 = Adult
+   > 4. Age BETWEEN 40 AND 59 = Middle Age Adult
+   > 5. Age BETWEEN 60 AND Above = Old
 
-> 1. Add a new columns named `day_of_admission` and `day_of_discharge` that contains the extracted days of the week on which the patient was admitted and discharged (Mon, Tue, Wed, Thur, Fri). This will help answer the question on which week of the hospital is busiest.
 
-> 2. Add a new columns named `month_of_admission` and `month_of_discharge` that contains the extracted months of the year on which the patient was admitted and discharged (Jan, Feb, Mar). Help determine which month of the year has the most patient.
+5. **Feature Engineering:** This will help use generate some new columns from existing ones.
 
-> 3. Add a new columns named `year_of_admission` and `year_of_discharge` that contains the extracted months of the year on which the patient was admitted and discharged (2021, 2022, 20023). Help determine trend over time.
+> 1. Add a new columns named `age_group` that contains the age segementation of the patient (Child, Teen, Adult).
+
+> 2. Add a new columns named `day_of_admission` and `day_of_discharge` that contains the extracted days of the week on which the patient was admitted and discharged (Mon, Tue, Wed, Thur, Fri). This will help answer the question on which week of the hospital is busiest.
+
+> 3. Add a new columns named `month_of_admission` and `month_of_discharge` that contains the extracted months of the year on which the patient was admitted and discharged (Jan, Feb, Mar). Help determine which month of the year has the most patient.
+
+> 4. Add a new columns named `year_of_admission` and `year_of_discharge` that contains the extracted months of the year on which the patient was admitted and discharged (2021, 2022, 20023). Help determine trend over time.
 
 4. **Exploratory Data Analysis (EDA):** Exploratory data analysis is done to answer the listed questions and aims of this project.
    
