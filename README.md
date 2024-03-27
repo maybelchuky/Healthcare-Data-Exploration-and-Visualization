@@ -17,11 +17,16 @@
 ### Project Overview
 ---
 
-Welcome to the Healthcare Data Exploration and Visualization project! In this project, we delve into a comprehensive healthcare dataset using Excel, SQL and Tableau to uncover valuable insights. By exploring patient demographics, medical conditions, billing trends, and more, we aim to gain a deeper understanding of healthcare delivery and patient outcomes. Through interactive visualizations and analysis, we showcase the power of data exploration and visualization in driving informed decision-making in the healthcare domain.
+Welcome to the Healthcare Data Exploration and Visualization project! In this project, I delve into a comprehensive healthcare dataset using Excel, SQL and Tableau to uncover valuable insights. By exploring patient demographics, medical conditions, billing trends, and more, I aim to gain a deeper understanding of healthcare delivery and patient outcomes. Through interactive visualizations and analysis, showcasing the power of data exploration and visualization in driving informed decision-making in the healthcare domain.
+
+### Data Sources
+---
+Healthcare Dataset: Obtained from Kaggle, this synthetic healthcare dataset is provided in CSV format. It offers a realistic simulation of healthcare data for analysis, covering patient demographics, medical conditions, and billing information.
 
 ### About Data
+---
 
-The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle.com/datasets/prasad22/healthcare-dataset) This dataset contains sales . The data contains 17 columns and 10000 rows:
+The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle.com/datasets/prasad22/healthcare-dataset) This dataset contains healthcare information over the years. The data contains 15 columns and 10,000 rows:
 
 | Column                  | Description                             | Data Type      |
 | :---------------------- | :-------------------------------------- | :------------- |
@@ -41,9 +46,6 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
 | Medication | The medication prescribed or administered to the patient during their admission                | VARCHAR(20)   |
 | Test Results          | The results of a medical test conducted during the patient's admission                         | VARCHAR(20)  |
 
-### Data Sources
----
-Healthcare Dataset: Obtained from Kaggle, this synthetic healthcare dataset is provided in CSV format. It offers a realistic simulation of healthcare data for analysis, covering patient demographics, medical conditions, and billing information.
 
 ### Tools
 ---
@@ -52,16 +54,75 @@ Healthcare Dataset: Obtained from Kaggle, this synthetic healthcare dataset is p
 - Microsoft SQL Server for Data Manipulation and Exploration
 - Tableau for Data Visualization
 
-### Data Cleaning and Preparation
+### Approach Used
 ---
-In the data preparation phase, we performed the fo,lowing tasks:
-1. Identify missing values in the dataset using Excel's filtering
-2. Identify and remove duplicate rows or records from the dataset
-3. Format the billing amount column to display numeric data as currency
+1. **Data Cleaning and Preparation Using Excel:** In the data preparation phase, we performed the fo,lowing tasks:
+> 1. Identify missing values in the dataset using Excel's filtering
+> 2. Identify and remove duplicate rows or records from the dataset
+> 3. Format the billing amount column to display numeric data as currency
 
-### Data Manipulation and Exploration Analysis
+2. **Data Wrangling:** This is the first step where inspection of data is done to make sure **NULL** values and missing values are detected and data replacement methods are used to replace, missing or **NULL** values.
+
+> 1. Build a database
+> 2. Create table and insert the data.
+> 3. Select columns with null values in them. There are no null values in our database as in creating the tables, we set **NOT NULL** for each field, hence null values are filtered out.
+
+3. **Feature Engineering:** This will help use generate some new columns from existing ones.
+
+> 1. Add a new columns named `day_of_admission` and `day_of_discharge` that contains the extracted days of the week on which the patient was admitted and discharged (Mon, Tue, Wed, Thur, Fri). This will help answer the question on which week of the hospital is busiest.
+
+> 2. Add a new columns named `month_of_admission` and `month_of_discharge` that contains the extracted months of the year on which the patient was admitted and discharged (Jan, Feb, Mar). Help determine which month of the year has the most patient.
+
+> 3. Add a new columns named `year_of_admission` and `year_of_discharge` that contains the extracted months of the year on which the patient was admitted and discharged (2021, 2022, 20023). Help determine trend over time.
+
+4. **Exploratory Data Analysis (EDA):** Exploratory data analysis is done to answer the listed questions and aims of this project.
+   
+### Problem Statement Questions
 ---
+
+ *Resource Utilization:*
+   - What is the average length of stay for patients in each department of the hospital?
+   - How many hospital beds are occupied on average each day? Can we identify peak occupancy times?
+
+ *Cost Analysis:*
+   - What is the total billing amount and average billing amount per patient for each medical condition?
+   - Are there any trends in billing amounts over time or by insurance provider?
+
+ *Patient Outcomes:*
+   - What is the readmission rate for patients with specific medical conditions?
+   - Is there a correlation between the length of stay and patient outcomes (e.g., readmission, mortality)?
+
+ *Medication Management:*
+   - Which medications are most commonly prescribed for patients with certain medical conditions?
+   - Are there any patterns in medication prescriptions that may indicate potential drug interactions or over-prescription?
+
+ *Emergency Management:*
+   - What percentage of admissions are emergencies, and how does this vary by hospital or department?
+   - How quickly are emergency patients admitted and treated compared to non-emergency cases?
+
+ *Quality of Care:*
+   - What percentage of medical tests have abnormal results, and how does this vary by medical condition?
+   - Can we identify any trends or patterns in patient satisfaction scores over time or by hospital department?
+
+ *Operational Efficiency:*
+   - Are there any bottlenecks or inefficiencies in the admission and discharge processes?
+   - What is the average turnaround time for test results, and are there any delays or issues with specific tests?
+
+ *Insurance Claims Analysis:*
+   - Which insurance providers have the highest and lowest average billing amounts per patient?
+   - Are there any discrepancies or anomalies in billing amounts for different insurance providers?
+
+ *Patient Segmentation:*
+   - Can we identify distinct patient segments based on demographic characteristics, medical conditions, and utilization patterns?
+   - How do the healthcare needs and outcomes differ among these patient segments?
+
+ *Preventive Care and Disease Management:*
+   - Are there any trends or patterns in patient admissions and medical conditions that may indicate opportunities for preventive care interventions?
+   - How effective are current disease management protocols in reducing readmissions and improving patient outcomes?
+
+6. **Data Visualization using Tableau:**
 Some Key SQL queries used in my analysis :
+
 ```SQL
 ----SEGEMENENTATION ANLAYSIS OF AGE GROUP---------
 SELECT Age,
