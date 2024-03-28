@@ -89,13 +89,14 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
    
 ### Problem Statement Questions
 ---
-   -  What is the length of stay and average length of stay for patients in the hospital?
+   - What is the length of stay and average length of stay for patients in the hospital?
    - How does the frequency of medical tests vary based on different admission types ?
    - What is the total billing amount and average billing amount per patient for each medical condition?
    - Are there any trends in billing amounts over time?
    - Are there any significant differences in billing amounts between patients with different insurance providers?
    - What percentage of medical tests have abnormal results, and how does this vary by medical condition?
-   - The relationship between distribution of age by billing amount
+   - The relationship between distribution of age group by billing amount
+   - How does the distribution of medical conditions vary by age group?
    - The relationship between distribution of medical conditions by blood type
    - The relationship between  distribution of medical conditions by gender
 
