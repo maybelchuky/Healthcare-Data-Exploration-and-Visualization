@@ -39,7 +39,7 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
 | Doctor                | The name of the doctor responsible for the patient's care during their admission          | VARCHAR(50)            |
 | Hospital                |  The healthcare facility or hospital where the patient was admitted       | VARCHAR(50)    |
 | Insurance Provider                   | The patient's insurance provider          | VARCHAR(50)  |
-| Billing Amount                    | The amount of money billed for the patient's healthcare services during their admission | FLOAT(10, 2)         |
+| Billing Amount                    | The amount of money billed for the patient's healthcare services during their admission | INT         |
 | Room Number                  | The room number where the patient was accommodated during their admission | INT      |
 | Admission Type                | The type of admission, which can be "Emergency," "Elective," or "Urgent"                 | VARCHAR(20) |
 | Discharge Date                   | The date on which the patient was discharged from the healthcare facility                    | DATE |
@@ -64,7 +64,7 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
 2. **Data Wrangling:** This is the step where inspection of data is done to make sure **NULL** values and missing values are detected and data replacement methods are used to replace, missing or **NULL** values.
 
 > 1. Build a database
-> 2. Create table and insert the data.
+> 2. Import healthcare data csv file.
 > 3. Select columns with null values in them. There are no null values in our database as in creating the tables, we set **NOT NULL** for each field, hence null values are filtered out.
 
 3. **Segementation Analysis of Age Demographic:**: This will hwlp segement the age demographic into groups
