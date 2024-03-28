@@ -89,85 +89,29 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
    
 ### Problem Statement Questions
 ---
-
- *Resource Utilization:*
-   - What is the average length of stay for patients in each department of the hospital?
-   - How many hospital beds are occupied on average each day? Can we identify peak occupancy times?
-
- *Cost Analysis:*
+   -  What is the length of stay and average length of stay for patients in the hospital?
+   - How does the frequency of medical tests vary based on different admission types ?
    - What is the total billing amount and average billing amount per patient for each medical condition?
-   - Are there any trends in billing amounts over time or by insurance provider?
-
- *Patient Outcomes:*
-   - What is the readmission rate for patients with specific medical conditions?
-   - Is there a correlation between the length of stay and patient outcomes (e.g., readmission, mortality)?
-
- *Medication Management:*
-   - Which medications are most commonly prescribed for patients with certain medical conditions?
-   - Are there any patterns in medication prescriptions that may indicate potential drug interactions or over-prescription?
-
- *Emergency Management:*
-   - What percentage of admissions are emergencies, and how does this vary by hospital or department?
-   - How quickly are emergency patients admitted and treated compared to non-emergency cases?
-
- *Quality of Care:*
+   - Are there any trends in billing amounts over time?
+   - Are there any significant differences in billing amounts between patients with different insurance providers?
    - What percentage of medical tests have abnormal results, and how does this vary by medical condition?
-   - Can we identify any trends or patterns in patient satisfaction scores over time or by hospital department?
-
- *Operational Efficiency:*
-   - Are there any bottlenecks or inefficiencies in the admission and discharge processes?
-   - What is the average turnaround time for test results, and are there any delays or issues with specific tests?
-
- *Insurance Claims Analysis:*
-   - Which insurance providers have the highest and lowest average billing amounts per patient?
-   - Are there any discrepancies or anomalies in billing amounts for different insurance providers?
-
- *Patient Segmentation:*
-   - Can we identify distinct patient segments based on demographic characteristics, medical conditions, and utilization patterns?
-   - How do the healthcare needs and outcomes differ among these patient segments?
-
- *Preventive Care and Disease Management:*
-   - Are there any trends or patterns in patient admissions and medical conditions that may indicate opportunities for preventive care interventions?
-   - How effective are current disease management protocols in reducing readmissions and improving patient outcomes?
+   - The relationship between distribution of age by billing amount
+   - The relationship between distribution of medical conditions by blood type
+   - The relationship between  distribution of medical conditions by gender
 
 6. **Data Visualization using Tableau:**
 Some Key SQL queries used in my analysis :
 
+### SQL Code
+---
+For the rest of the code, check the SQL_queries.sql file
 ```SQL
-----SEGEMENENTATION ANLAYSIS OF AGE GROUP---------
-SELECT Age,
-CASE
-     WHEN age BETWEEN 5 AND 12 THEN 'Child'
-	 WHEN age BETWEEN 13 AND 19 THEN 'Teen'
-	 WHEN age BETWEEN 20 AND 39 THEN 'Adult'
-	 WHEN age BETWEEN 40 AND 59 THEN 'Middle Age Adult'
-	 ELSE 'Old'
-	END AS age_group
-FROM healthcare;
+CREATE DATABASE healthcare_database;
 
------FEATURE ENGINEERING/ OF DAYNAME, MONTH & YEAR FROM DATE COLUMN & CREATING NEW COLUMN---------
-SELECT DATENAME (WEEKDAY, date_of_admission) AS day_of_admission
-     FROM healthcare;
-ALTER TABLE healthcare
-     ADD day_of_admission VARCHAR(30);
-UPDATE healthcare
-   SET day_of_admission = DATENAME (WEEKDAY, date_of_admission);
+---import helathcare csv file
 
----FOR MONTH
-SELECT DATENAME (MONTH, date_of_admission) AS month_of_admission
-    FROM healthcare;
-ALTER TABLE healthcare
-    ADD month_of_admission VARCHAR(30);
-UPDATE healthcare
-    SET month_of_admission = DATENAME(MONTH, date_of_admission);
-
----FOR YEAR
-SELECT DATENAME (YEAR, date_of_admission) AS year_of_admission
-    FROM healthcare;
-ALTER TABLE healthcare
-    ADD year_of_admission VARCHAR(30);
-UPDATE healthcare
-    SET year_of_admission = DATENAME(YEAR, date_of_admission);
+SELECT *
+  FROM healthcare;
 
 
 ```
