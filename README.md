@@ -5,19 +5,17 @@
 - [Project Overview](#project_overview)
 - [Data Sources](#data_sources)
 - [Tools](#tools)
-- [Data Cleaning and Preparation](#data_cleaning_and_preparation)
-- [Data Manipulation and Exploration Analysis](#data_manipulation_and_exploration_analysis)
+- [Approach Used](#approach_used)
+- [Problem Statatment Questions](#problem_statement_questions)
+- [SQL Code](#sql_code)
 - [Data Visualization](#data-visualization)
 - [Results/Findings](#results_/_findings)
 - [Recommendations](#recommendations)
-- [Limitations](#limitations)
-- [References](#references)
 
 
 ### Project Overview
 ---
-
-Welcome to the Healthcare Data Exploration and Visualization project! In this project, I delve into a comprehensive healthcare dataset using Excel, SQL and Tableau to uncover valuable insights. By exploring patient demographics, medical conditions, billing trends, and more, I aim to gain a deeper understanding of healthcare delivery and patient outcomes. Through interactive visualizations and analysis, showcasing the power of data exploration and visualization in driving informed decision-making in the healthcare domain.
+In this project, I explore a comprehensive healthcare dataset using Excel, SQL, and Tableau to uncover valuable insights. By examining patient demographics, medical conditions, billing trends, and more, my goal is to gain a deeper understanding of healthcare delivery and patient outcomes, ultimately aiding informed decision-making in healthcare. Through interactive visualizations and analysis, I aim to provide actionable insights and facilitate data-driven strategies in the healthcare industry.
 
 ### Data Sources
 ---
@@ -123,10 +121,6 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
 15. What are the busiest day,month and year of admission, and how many admissions were recorded ?
 16. What is the distribution of discharge dates across different months and years?
 
-
-6. **Data Visualization using Tableau:**
-Some Key SQL queries used in my analysis :
-
 ### SQL Code
 ---
 For the rest of the code, check the [SQL Code](SQLQuery.sql) file
@@ -140,18 +134,52 @@ SELECT *
 
 
 ```
-## Data Visualization
+### Data Visualization
+---
 
 ### Results/ Findings
 ---
-1.
+   - Frequency varies significantly based on admission type, with the most common result being "Abnormal."
+   - Billing amounts vary across medical conditions, with Diabetes and Obesity having the highest total and average billing amounts.
+   - There is a decreasing trend in total billing amounts over the years from 2020 to 2023.
+   - There are significant differences in billing amounts among patients with different insurance providers, with Aetna having the 
+     highest total and average billing amount.
+   - The percentage of abnormal medical tests varies by medical condition, ranging from 33.09% for Diabetes to 36.48% for Asthma.
+   - Billing amounts show little variation across age groups, with the average billing amount remaining consistent.
+   - The distribution of medical conditions varies significantly by age group, with older adults predominantly experiencing conditions 
+    like Asthma, Cancer, and Diabetes, while teenagers commonly face Hypertension and Asthma.
+   - Asthma is more prevalent among individuals with blood types O+ and A+, while diabetes appears to be more common among those with 
+     blood type B-.
+   - Older individuals may be more inclined to use Medicare, while younger age groups may opt for private insurance providers like 
+     Aetna or Blue Cross.
+   - Patients with asthma may frequently exhibit abnormal test results, suggesting the need for closer monitoring or specialized 
+     treatment approaches.
+   - Busiest Day, Month, and Year of Admission: Wednesday has the highest number of admissions across various years and months, 
+    indicating a consistent trend.October and November observe higher admission rates compared to other months. 2019 and 2020 recorded 
+    higher admissions compared to other years, with a noticeable decline in 2021 and a subsequent increase in 2022 and 2023.
+   - Distribution of Discharge Dates: March has the highest number of discharges, followed by October and May, suggesting a possible 
+     correlation with seasonal health patterns or medical procedures. Discharge counts vary across different years, with notable peaks 
+     in 2022 and 2023, indicating potential shifts in healthcare demand or treatment durations over time.
+   - The average age of patients in the healthcare system is 51 years, with the youngest patient being 18 years old and the oldest being 85 years old. The standard deviation of ages around the mean is approximately 19.59 years.
+   - The minimum billing amount recorded for healthcare services is $1000, while the maximum billing amount is $49,996. On average, each patient's billed amount is $25,516, resulting in a total revenue of $255,168,084. The standard deviation of billed amounts around the mean is approximately 
+      $14,067.29.
+   - The most common blood type observed among patients is AB-. 
+   - Patients have experienced a minimum length of stay of 1 day and a maximum length of stay of 30 days, with an average length of stay of 15 days.
+   - The healthcare system consists of 9416 unique doctors, 9378 unique patients, and 10,0000 hospitals. There are 5 distinct insurance providers and 400 unique types of rooms in the healthcare system. Additionally, six unique medical conditions have been identified within the system. 
+
+     
 
 ### Recommendations
 ---
 
-### Limitations
+- Implement robust monitoring systems for abnormal test results to ensure timely intervention and management.
+- Consider tailoring treatment approaches for asthma patients based on blood type.
+- Develop targeted health education programs for older adults to raise awareness and promote preventive measures.
+- Strategically allocate resources to address fluctuations in demand and optimize operational efficiency.
+- Optimize insurance coverage options to ensure equitable access to quality care for patients.
+- Conduct in-depth analyses to identify seasonal health patterns and anticipate fluctuations in healthcare demand.
+- Prioritize continuous quality improvement initiatives to enhance patient care delivery and organizational performance.
+- Invest in technology and infrastructure to streamline workflows and improve communication across the healthcare continuum.
 ---
 
-### Refernces
----
-1.
+
