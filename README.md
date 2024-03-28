@@ -106,21 +106,22 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
    
 ### Problem Statement Questions
 ---
-   - What is the length of stay and average length of stay for patients in the hospital?
-   - How does the frequency of medical tests vary based on different admission types ?
-   - What is the total billing amount and average billing amount per patient for each medical condition?
-   - Are there any trends in billing amounts over time?
-   - Are there any significant differences in billing amounts between patients with different insurance providers?
-   - What percentage of medical tests have abnormal results, and how does this vary by medical condition?
-   - The relationship between distribution of age group by billing amount
-   - How does the distribution of medical conditions vary by age group?
-   - The relationship between distribution of medical conditions by blood type?
-   - The relationship between distribution of medical conditions by gender?
-   - How does the distribution of insurance providers vary across different age group?
-   - What is the distribution of test results for patients with different medical conditions?
-   - Are there any notable differences in test result outcomes for patients with different medical conditions?
-   - identify any monthly patterns in the occurrence of specific medical conditions?
-   - What are the busiest day,month and year of admission, and how many admissions were recorded ?
+1. What is the length of stay and average length of stay for patients in the hospital?
+2. How does the frequency of medical tests vary based on different admission types ?
+3. What is the total billing amount and average billing amount per patient for each medical condition?
+4. Are there any trends in billing amounts over time?
+5. Are there any significant differences in billing amounts between patients with different insurance providers?
+6. What percentage of medical tests have abnormal results, and how does this vary by medical condition?
+7. The relationship between distribution of age group by billing amount
+8. How does the distribution of medical conditions vary by age group?
+9. The relationship between distribution of medical conditions by blood type?
+10. The relationship between distribution of medical conditions by gender?
+11. How does the distribution of insurance providers vary across different age group?
+12. What is the distribution of test results for patients with different medical conditions?
+13. Are there any notable differences in test result outcomes for patients with different medical conditions?
+14. Identify any monthly patterns in the occurrence of specific medical conditions?
+15. What are the busiest day,month and year of admission, and how many admissions were recorded ?
+16. What is the distribution of discharge dates across different months and years?
 
 
 6. **Data Visualization using Tableau:**
