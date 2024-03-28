@@ -75,7 +75,7 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
    > 5. Age BETWEEN 60 AND Above = Old
 
 
-5. **Feature Engineering:** This will help use generate some new columns from existing ones.
+4. **Feature Engineering:** This will help use generate some new columns from existing ones.
 
 > 1. Add a new columns named `age_group` that contains the age segementation of the patient (Child, Teen, Adult).
 
@@ -85,7 +85,24 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
 
 > 4. Add a new columns named `year_of_admission` and `year_of_discharge` that contains the extracted months of the year on which the patient was admitted and discharged (2021, 2022, 20023). Help determine trend over time.
 
-4. **Exploratory Data Analysis (EDA):** Exploratory data analysis is done to answer the listed questions and aims of this project.
+5. **Statistical Summary Analysis**
+ This analysis aims to provide insights into the key characteristics and distribution of variables in the healthcare dataset.
+> **Summary Statistics:**
+> - Mean Age: Average age of patients.
+> - Minimum Age: Smallest observed age.
+> - Maximum Age: Largest observed age.
+> - Mode Blood Type: Most common blood type.
+> - Minimum Length of Stay: Shortest duration in hospital.
+> - Maximum Length of Stay: Longest duration in hospital.
+> - Average Length of stay: Mean duration in the hospital.
+> - Sum of billing amount: Total billed for healthcare.
+> - Average billing amount: Mean billed per patient.
+> - Minimum billing amount: Smallest billed amount.
+> - Maximum billing amount: Largest billed amount.
+> - Standard Deviation of Age: Measure of the dispersion of ages around the mean.
+> - Standard Deviation of Billing Amount: Measure of the variability of billed amounts around the mean.
+
+7. **Exploratory Data Analysis (EDA):** Exploratory data analysis is done to answer the listed questions and aims of this project.
    
 ### Problem Statement Questions
 ---
@@ -97,8 +114,14 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
    - What percentage of medical tests have abnormal results, and how does this vary by medical condition?
    - The relationship between distribution of age group by billing amount
    - How does the distribution of medical conditions vary by age group?
-   - The relationship between distribution of medical conditions by blood type
-   - The relationship between  distribution of medical conditions by gender
+   - The relationship between distribution of medical conditions by blood type?
+   - The relationship between distribution of medical conditions by gender?
+   - How does the distribution of insurance providers vary across different age group?
+   - What is the distribution of test results for patients with different medical conditions?
+   - Are there any notable differences in test result outcomes for patients with different medical conditions?
+   - identify any monthly patterns in the occurrence of specific medical conditions?
+   - What are the busiest day,month and year of admission, and how many admissions were recorded ?
+
 
 6. **Data Visualization using Tableau:**
 Some Key SQL queries used in my analysis :
