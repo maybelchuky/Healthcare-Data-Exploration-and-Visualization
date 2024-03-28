@@ -102,7 +102,7 @@ The dataset was obtained from the [Kaggle Healthcare Dataset](https://www.kaggle
 > - Standard Deviation of Age: Measure of the dispersion of ages around the mean.
 > - Standard Deviation of Billing Amount: Measure of the variability of billed amounts around the mean.
 
-7. **Exploratory Data Analysis (EDA):** Exploratory data analysis is done to answer the listed questions and aims of this project.
+6. **Exploratory Data Analysis (EDA):** Exploratory data analysis is done to answer the listed questions and aims of this project.
    
 ### Problem Statement Questions
 ---
@@ -129,7 +129,7 @@ Some Key SQL queries used in my analysis :
 
 ### SQL Code
 ---
-For the rest of the code, check the SQL_queries.sql file
+For the rest of the code, check the [SQL Code](SQLQuery.sql) file
 ```SQL
 CREATE DATABASE healthcare_database;
 
