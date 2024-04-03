@@ -165,8 +165,6 @@ SELECT *
       $14,067.29.
    - The most common blood type observed among patients is AB-. 
    - Patients have experienced a minimum length of stay of 1 day and a maximum length of stay of 30 days, with an average length of stay of 15 days.
-   - The healthcare system consists of 9416 unique doctors, 9378 unique patients, and 10,0000 hospitals. There are 5 distinct insurance providers and 400 unique types of rooms in the healthcare system. Additionally, six unique medical conditions have been identified within the system. 
-
      
 
 ### Recommendations
