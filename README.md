@@ -135,6 +135,10 @@ SELECT *
 
 ```
 ### Data Visualization
+After the exploratory analysis, the healthcare results were loadeed to Tableau for visualization.
+- To view the dashboard on Tableau, click here [Healthcare Dashboard]( https://public.tableau.com/app/profile/mabel.olachi.chukwuma/viz/HEALTHCAREDASHBOARD_17120690141660/Dashboard1)
+  ![Healthcare Dashboard](healthcare-viz.png)
+
 ---
 
 ### Results/ Findings
